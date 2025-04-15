@@ -44,7 +44,7 @@ ActivityLogger/
 ├── mainwindow.h / .cpp / .ui # Interfaz gráfica (Qt Designer)
 ├── main.cpp                  # Entrada principal del programa
 ├── ActivityLogger.pro        # Archivo de proyecto Qt
-├── test.exe                  # Pruebas unitarias
+├── test.cpp                  # Pruebas unitarias
 ```
 
 ---
