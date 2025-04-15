@@ -22,6 +22,7 @@ QT
 - Visualización de las actividades del día
 - Exportación del registro diario a un archivo CSV
 - Interfaz gráfica construida con **Qt Widgets**
+- Pruebas unitarias con Google Test
 
 ---
 
@@ -43,6 +44,7 @@ ActivityLogger/
 ├── mainwindow.h / .cpp / .ui # Interfaz gráfica (Qt Designer)
 ├── main.cpp                  # Entrada principal del programa
 ├── ActivityLogger.pro        # Archivo de proyecto Qt
+├── test.exe                  # Pruebas unitarias
 ```
 
 ---
@@ -54,13 +56,23 @@ ActivityLogger/
 - Git (opcional, para control de versiones)
 
 ---
+##  Ejecución de las pruevas unitarias Google Test
 
-##  Ejecución
+1. Abrimos una terminal 
+2. ejecutamos text.exe
+![Descripción de la imagen](imagenes/Captura.PNG)
+---
+
+##  Ejecución de la aplicación 
 
 1. Abrir el proyecto con **Qt Creator** (`ActivityLogger.pro`)
 2. Seleccionar un kit de compilación válido
 3. Pulsar el botón de **Ejecutar **
+![Descripción de la imagen](imagenes/Captura1.PNG)
+---
 
+##  Versiones de Codigo
+![Descripción de la imagen](imagenes/Captura0.PNG)
 ---
 
 **Jesús Fernández Rueda**  
