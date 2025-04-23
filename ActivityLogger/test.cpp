@@ -29,9 +29,7 @@ int main(int argc, char **argv) {
 
 /*Usa Google Test para verificar que las clases funcionan bien.
 Que Activity guarda bien los datos.
-
 Que ActivityLog añade y devuelve actividades correctamente.
-
 set PATH=C:\Qt\6.9.0\mingw_64\bin;%PATH%
 */
 
