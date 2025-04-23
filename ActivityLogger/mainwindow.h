@@ -28,3 +28,17 @@ private:
 };
 
 #endif // MAINWINDOW_H
+
+/*Hereda de QMainWindow, es decir, es una ventana Qt.
+
+Usa la clase ActivityLog para guardar actividades.
+
+Tiene slots (funciones conectadas a botones Qt):
+
+on_addButton_clicked(): cuando el usuario añade una actividad.
+
+on_exportButton_clicked(): cuando exporta a CSV.
+
+updateActivityList() actualiza lo que se muestra en pantalla (la lista de actividades).
+
+*/

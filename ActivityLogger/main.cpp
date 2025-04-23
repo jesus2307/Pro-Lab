@@ -7,3 +7,4 @@ int main(int argc, char *argv[]) {
     w.show();
     return a.exec();
 }
+/*El punto de entrada del programa. Muy corto, solo crea y muestra la ventana principal.*/

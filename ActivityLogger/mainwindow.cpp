@@ -53,3 +53,22 @@ void MainWindow::updateActivityList(const QDate& date) {
         );
     }
 }
+/*Cuando haces clic en "Añadir":
+
+Recoge los datos escritos (descripción, hora inicio y fin),
+
+Crea un Activity,
+
+Lo añade al ActivityLog,
+
+Actualiza la lista visible.
+
+Cuando haces clic en "Exportar":
+
+Abre una ventana para guardar el archivo CSV,
+
+Llama a exportToCSV,
+
+Muestra un mensaje de éxito o error.
+
+*/

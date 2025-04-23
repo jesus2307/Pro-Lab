@@ -19,3 +19,8 @@ private:
 };
 
 #endif // ACTIVITY_H
+
+
+/*¿Qué hace?
+Guarda los datos de una actividad: descripción, hora de inicio y hora de fin.
+Tiene tres getters (getDescription, getStartTime, getEndTime) para acceder a esos datos.*/

@@ -6,3 +6,6 @@ Activity::Activity(const QString& description, const QTime& start, const QTime& 
 QString Activity::getDescription() const { return description; }
 QTime Activity::getStartTime() const { return startTime; }
 QTime Activity::getEndTime() const { return endTime; }
+
+
+//guarda los datos de una actividad.
