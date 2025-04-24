@@ -16,3 +16,9 @@ private:
 };
 
 #endif // ACTIVITYLOG_H
+
+ /*Define la clase ActivityLog, que:
+Guarda actividades agrupadas por fecha (QDate).
+Permite añadir una actividad a una fecha con addActivity.
+Permite obtener todas las actividades de una fecha con getActivitiesForDate.
+Internamente usa un QMap<QDate, QVector<Activity>> log para almacenar todo.*/
