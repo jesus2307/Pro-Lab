@@ -7,7 +7,6 @@
 class Activity {
 public:
     Activity(const QString& description, const QTime& start, const QTime& end);
-
     QString getDescription() const;
     QTime getStartTime() const;
     QTime getEndTime() const;
