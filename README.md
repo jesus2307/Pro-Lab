@@ -58,14 +58,15 @@ ActivityLogger/
 ---
 ##  Ejecución de las pruevas unitarias Google Test
 
-1. Abrimos una terminal 
-2. ejecutamos text.exe
+1. Abrir el proyecto con **Qt Creator** (`ActivityLogger_tests.pro`)
+2. Seleccionar un kit de compilación válido
+3. Pulsar el botón de **Ejecutar **
 ![Descripción de la imagen](imagenes/Captura.PNG)
 ---
 
 ##  Ejecución de la aplicación 
 
-1. Abrir el proyecto con **Qt Creator** (`ActivityLogger.pro`)
+1. Abrir el proyecto con **Qt Creator** (`ActivityLogger_gui.pro`)
 2. Seleccionar un kit de compilación válido
 3. Pulsar el botón de **Ejecutar **
 ![Descripción de la imagen](imagenes/Captura1.PNG)
