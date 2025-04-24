@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>400</height>
+    <width>620</width>
+    <height>501</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Activity Logger</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0">
     <item>
      <layout class="QGridLayout" name="gridLayout">
       <item row="1" column="0">
@@ -78,6 +78,41 @@
      </layout>
     </item>
     <item>
+     <widget class="QPushButton" name="showAllButton">
+      <property name="text">
+       <string>Mostrar todas</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteButton">
+      <property name="text">
+       <string>Eliminar seleccionada</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="countAllButton">
+      <property name="text">
+       <string>Total actividades</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="countByTypeButton">
+      <property name="text">
+       <string>Contar tipo</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="typeLineEdit">
+      <property name="text">
+       <string>&quot;Ej: Correr&quot;  </string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QListWidget" name="activityListWidget"/>
     </item>
    </layout>
@@ -87,8 +122,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>480</width>
-     <height>37</height>
+     <width>620</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

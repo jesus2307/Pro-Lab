@@ -25,7 +25,3 @@ target_link_libraries(test
 add_subdirectory(external/googletest)
 target_include_directories(test PUBLIC ${gtest_SOURCE_DIR}/include)
 target_link_libraries(test gtest gtest_main)
-
-#Este archivo prepara todo para que puedas:
-#Compilar tu aplicación con Qt.
-#jecutar pruebas unitarias con Google Test.

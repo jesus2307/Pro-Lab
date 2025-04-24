@@ -20,6 +20,10 @@ public:
 private slots:
     void on_addButton_clicked();
     void on_dateEdit_userDateChanged(const QDate &date);
+    void on_showAllButton_clicked();
+    void on_deleteButton_clicked();
+    void on_countAllButton_clicked();
+    void on_countByTypeButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -28,11 +32,3 @@ private:
 };
 
 #endif // MAINWINDOW_H
-
-/*Hereda de QMainWindow, es decir, es una ventana Qt.
-Usa la clase ActivityLog para guardar actividades.
-Tiene slots (funciones conectadas a botones Qt):
-on_addButton_clicked(): cuando el usuario añade una actividad.
-on_exportButton_clicked(): cuando exporta a CSV.
-updateActivityList() actualiza lo que se muestra en pantalla (la lista de actividades).
-*/

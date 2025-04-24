@@ -53,14 +53,44 @@ void MainWindow::updateActivityList(const QDate& date) {
         );
     }
 }
-/*Cuando haces clic en "Añadir":
-Recoge los datos escritos (descripción, hora inicio y fin),
-Crea un Activity,
-Lo añade al ActivityLog,
-Actualiza la lista visible.
-Cuando haces clic en "Exportar":
-Abre una ventana para guardar el archivo CSV,
-Llama a exportToCSV,
-Muestra un mensaje de éxito o error.
+void MainWindow::on_showAllButton_clicked() {
+    ui->activityListWidget->clear();
+    QVector<Activity> allActivities = activityLog.getActivities();
 
-*/
+    for (const Activity& a : allActivities) {
+        ui->activityListWidget->addItem(
+            QString("%1 | %2 - %3")
+            .arg(a.getDescription())
+            .arg(a.getStartTime().toString("hh:mm"))
+            .arg(a.getEndTime().toString("hh:mm"))
+        );
+    }
+}
+void MainWindow::on_deleteButton_clicked() {
+    int index = ui->activityListWidget->currentRow();
+    QDate date = ui->dateEdit->date();
+
+    if (index >= 0) {
+        activityLog.removeActivity(date, index);
+        updateActivityList(date);
+    } else {
+        QMessageBox::warning(this, "Selecciona una actividad", "Selecciona una actividad para eliminarla.");
+    }
+}
+void MainWindow::on_countAllButton_clicked() {
+    int total = activityLog.countAllActivities();
+    QMessageBox::information(this, "Total de actividades",
+                             QString("Hay un total de %1 actividades registradas.").arg(total));
+}
+void MainWindow::on_countByTypeButton_clicked() {
+    QString type = ui->typeLineEdit->text();
+
+    if (type.isEmpty()) {
+        QMessageBox::warning(this, "Error", "Introduce un tipo de actividad.");
+        return;
+    }
+
+    int count = activityLog.countActivitiesByType(type);
+    QMessageBox::information(this, "Cantidad por tipo",
+                             QString("Hay %1 actividades del tipo '%2'.").arg(count).arg(type));
+}

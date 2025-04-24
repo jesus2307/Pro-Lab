@@ -10,15 +10,12 @@ class ActivityLog {
 public:
     void addActivity(const QDate& date, const Activity& activity);
     QVector<Activity> getActivitiesForDate(const QDate& date) const;
-
+    QVector<Activity> getActivities() const;
+    void removeActivity(const QDate& date, int index);
+    int countAllActivities() const;
+    int countActivitiesByType(const QString& type) const;
 private:
     QMap<QDate, QVector<Activity>> log;
 };
 
 #endif // ACTIVITYLOG_H
-
- /*Define la clase ActivityLog, que:
-Guarda actividades agrupadas por fecha (QDate).
-Permite añadir una actividad a una fecha con addActivity.
-Permite obtener todas las actividades de una fecha con getActivitiesForDate.
-Internamente usa un QMap<QDate, QVector<Activity>> log para almacenar todo.*/

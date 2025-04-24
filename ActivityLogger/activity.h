@@ -11,6 +11,7 @@ public:
     QString getDescription() const;
     QTime getStartTime() const;
     QTime getEndTime() const;
+    bool isValid() const;
 
 private:
     QString description;
@@ -19,8 +20,3 @@ private:
 };
 
 #endif // ACTIVITY_H
-
-
-/*
-Guarda los datos de una actividad: descripción, hora de inicio y hora de fin.
-Tiene tres getters (getDescription, getStartTime, getEndTime) para acceder a esos datos.*/
